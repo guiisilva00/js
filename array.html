@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const notas = [8, 7.5, 10];
+        const nomes = ["Ana", "Bia", "Carlos"];
+
+        console.log(notas[0]); // 8
+        console.log(nomes.length); // 3
+
+        const paginaInsta = {
+            nome: "Rogério Ceni",
+            bio: "SOU SOU TRICOLOR, TENHO LIBERTADORES, NAO ALUGO ESTÁDIO, SOU HEXA BRASILEIRO, NUNCA FUI REBAIXADO!!!!",
+            foto: ":)",
+            arroba: "@rogerio_ceni"
+        }
+
+        console.log(`Meu nome é ${paginaInsta.nome}, e meu arroba é ${paginaInsta.arroba}.`);
+
+        const carrinho = [
+            {
+                nome: "Faca Guinzo",
+                valor: 299.99,
+                tag: ["Em Alta", "Cozinha", "Desconto"]
+            },
+            {
+                nome: "Combo cheddar McMelt",
+                valor: 32.99,
+                tag: ["Em Alta", "Alimento", "Desconto"]
+            },
+            {
+                nome: "Garrafa térmica Stanley",
+                valor: 99.99,
+                tag: ["Em Alta", "Utensílios", "Desconto"]
+            }
+        ]
+
+        let somaTotal = 0;
+        carrinho.map(produto => {
+            somaTotal += produto["valor"]
+        })
+        console.log(`A soma é ${somaTotal}`);
+    </script>
+</body>
+
+</html>
