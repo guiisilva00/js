@@ -23,7 +23,7 @@
             arroba: "@rogerio_ceni"
         }
 
-        console.log(`Meu nome é ${paginaInsta.nome}, meu @ é: "${paginaInsta.arroba}", a minha bio é "${paginaInsta.bio}" e minha foto é ${paginaInsta.foto}`);
+        // console.log(`Meu nome é ${paginaInsta.nome}, meu @ é: "${paginaInsta.arroba}", a minha bio é "${paginaInsta.bio}" e minha foto é ${paginaInsta.foto}`);
 
         const carrinho = [
             {
@@ -83,7 +83,19 @@
         carrinho.map(produto => {
             somaTotal += produto["valor"]
         })
-        console.log(`A soma é ${somaTotal}`);
+
+        carrinho.map(produto => {
+            produto["tag"].map(tag => {
+                {
+                    if (tag === "Em alta") {
+                        console.log(`O produto ${produto["nome"]} está em alta, aproveite!`);
+
+                    }
+                }
+            })
+        })
+
+        // console.log(`A soma é ${somaTotal}`);
     </script>
 </body>
 
